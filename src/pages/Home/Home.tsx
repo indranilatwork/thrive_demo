@@ -30,7 +30,7 @@ export const Home = (props: any) => {
 
     const filterBySearch = () => {
         if (data && data.length) {
-            const filter = data.filter((e: any) => e.region.toLowerCase().indexOf(region.toLowerCase()) > -1 && e.name?.common.toLowerCase().indexOf(searchText.toLowerCase()) > -1);
+            const filter = data.filter((e: any) => e.region.toLowerCase().indexOf(region === 'All' ? '' : region.toLowerCase()) > -1 && e.name?.common.toLowerCase().indexOf(searchText.toLowerCase()) > -1);
             setRegionData(filter)
         }
     }
@@ -82,6 +82,7 @@ export const Home = (props: any) => {
                                         label="Age"
                                         onChange={handleChange}
                                     >
+                                        <MenuItem className="element-color" value="All" key="all">All</MenuItem>
                                         {data?.map((e: any) => e?.region).filter((e: any, i: any, x: any) => x.indexOf(e) === i).map((region: any, index: any) => (
                                             <MenuItem className="element-color" value={region} key={index}>{region}</MenuItem>
                                         ))}
