@@ -1,0 +1,6 @@
+html, body{
+    --background-color : hsl(0, 0%, 98%);
+    --text-color : hsl(200, 15%, 8%);
+    --input-color : hsl(0, 0%, 52%);
+    --element-color : hsl(0, 0%, 100%)
+}

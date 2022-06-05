@@ -1,0 +1,23 @@
+
+
+.element-color{
+    background-color: var(--element-color)!important;
+    color: var(--text-color)!important;
+}
+
+.title-font{
+    font-size: 16px !important;
+}
+
+.text-font{
+    font-size: 14px !important;
+}
+body {
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.padding-left-15{
+    padding-left: 15px;
+}

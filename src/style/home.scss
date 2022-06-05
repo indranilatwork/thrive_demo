@@ -1,0 +1,71 @@
+.margin {
+  margin: 5px 0;
+}
+
+.box-style {
+  margin: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  // color: rgba(0, 0, 0, 0.6);
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.padding-left-0 {
+  padding-left: 0 !important;
+}
+
+.select-title {
+  background: var(--element-color);
+  color: var(--text-color)!important;
+  padding: 0 5px;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.float {
+  float: right;
+  @media screen and (max-width: 899px) {
+    float: left;
+  }
+}
+
+.text-overflow-control {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.loading-style {
+  position: absolute!important;
+  right: 50%;
+  top: 50%;
+  & .MuiLoadingButton-loadingIndicator {
+    & span {
+      width: 50px !important;
+      height: 50px !important;
+    }
+  }
+}
+
+.text-color{
+  color: var(--text-color)!important;
+}
+
+
+ul{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
